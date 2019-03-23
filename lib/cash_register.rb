@@ -4,13 +4,13 @@ class CashRegister
   
   def initialize(discount = 0)
     @total = 0
-    @discount = discount
+    @discount = discount                   # Initialize and create self.
     @items = []
   end
   
   def add_item(item, price, quantity = 1)
   self.price = price
-    @total = @total + price * quantity
+    @total = @total + price * quantity       # Get the price and put it in items.
     quantity.times do
     @items << item
     end
@@ -20,9 +20,9 @@ class CashRegister
     if @discount != 0
       a = @total * self.discount / 100
       @total = @total - a
-      "After the discount, the total comes to $#{@total}."
-    else
-    "There is no discount to apply."
+      "After the discount, the total comes to $#{@total}."  # Apply the discount to total
+    else                                                    # out put correct messages.
+      "There is no discount to apply."
     end
   end
   

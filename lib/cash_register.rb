@@ -21,6 +21,7 @@ class CashRegister
       x = @total * self.discount / 100
       @total = @total - x
       
+      
   end
  
   

@@ -27,11 +27,11 @@ class CashRegister
   end
   
   def items
-    @items
+    @items                                                  # return the array of items
   end
   
   def void_last_transaction
-    @total -= self.price
+    @total -= self.price                                    # deduct price of the total
   end
   
 end
